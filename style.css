@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,116 +9,303 @@ html {
 }
 
 body {
+    background: #101820;
+    color: #ffffff;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f7fb;
-    color: #333;
+    line-height: 1.7;
 }
 
-/* Header */
+
+/* =========================
+   HEADER
+========================= */
+
 header {
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+    padding: 35px 20px;
+    background: #0b1118;
+    border-bottom: 1px solid #26323d;
 }
 
 header h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+header h1 font {
+    color: #00d9ff !important;
 }
 
 header p {
-    font-size: 20px;
+    color: #9ca3af;
 }
 
-/* Navigation */
-nav {
-    background-color: #222;
-    text-align: center;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+header hr {
+    border: none;
+    height: 2px;
+    background: #00d9ff;
+    margin: 20px auto;
 }
 
-nav a {
-    color: white;
+header a {
+    color: #ffffff !important;
     text-decoration: none;
-    margin: 0 15px;
+    font-size: 14px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #8f94fb;
+header a:hover {
+    color: #00d9ff !important;
 }
 
-/* Main Content */
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
+
+/* =========================
+   HERO SECTION
+========================= */
+
+section[align="center"] {
+    padding: 50px 20px;
 }
 
-/* Sections */
+section[align="center"] h2 {
+    font-size: 30px;
+}
+
+section[align="center"] p {
+    color: #b8c0c8;
+}
+
+button {
+    background: #00d9ff;
+    color: #101820;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+
+/* =========================
+   ALL SECTIONS
+========================= */
+
 section {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 25px auto;
 }
+
+section table {
+    background: #151f28;
+    border: 1px solid #26323d;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
 
 section h2 {
-    color: #4e54c8;
-    margin-bottom: 15px;
-    font-size: 28px;
-}
-
-section p {
+    color: #ffffff;
+    font-size: 27px;
     margin-bottom: 10px;
 }
 
-/* Skills List */
+section h2 font {
+    color: #00d9ff !important;
+}
+
+section h3 {
+    color: #00d9ff;
+}
+
+section hr {
+    border: none;
+    height: 1px;
+    background: #293642;
+    margin: 15px 0 20px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+section p {
+    color: #b8c0c8;
+    margin: 8px 0;
+}
+
+section b {
+    color: #ffffff;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills table {
+    border-spacing: 0;
+}
+
+#skills td {
+    padding: 14px;
+    border-bottom: 1px solid #26323d;
+    color: #d6dce1;
+}
+
+#skills tr:last-child td {
+    border-bottom: none;
+}
+
+#skills tr:hover {
+    background: #1b2833;
+}
+
+#skills td:last-child {
+    color: #00d9ff;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
 ul {
     list-style: none;
+    padding: 10px 0;
 }
 
-ul li {
-    background-color: #eef0ff;
+li {
+    background: #1b2833;
+    border-left: 3px solid #00d9ff;
     margin: 10px 0;
-    padding: 12px 15px;
-    border-left: 5px solid #4e54c8;
+    padding: 12px 18px;
+    color: #d6dce1;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Footer */
+li:hover {
+    background: #223442;
+    padding-left: 25px;
+    color: #00d9ff;
+}
+
+
+/* =========================
+   FUTURE VISION
+========================= */
+
+section[align="center"] h3 {
+    margin-top: 20px;
+    color: #00d9ff;
+    font-style: italic;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact a {
+    color: #00d9ff !important;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
+    padding: 35px 20px;
+    background: #0b1118;
+    border-top: 1px solid #26323d;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
+footer h2 {
+    font-size: 28px;
+}
+
+footer h2 font {
+    color: #00d9ff !important;
+}
+
+footer p {
+    color: #707b85;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+section table {
+    transition: 0.3s;
+}
+
+section table:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.08);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
     header h1 {
-        font-size: 35px;
+        font-size: 38px;
     }
 
-    header p {
-        font-size: 17px;
+    header a {
+        font-size: 12px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
-        font-size: 14px;
+    section table {
+        width: 92% !important;
     }
 
-    section {
-        padding: 20px;
+    section[align="center"] {
+        padding: 35px 10px;
+    }
+
+    section[align="center"] h2 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #skills table {
+        font-size: 13px;
+    }
+
+    #skills td:last-child {
+        font-size: 10px;
+    }
+
+    footer {
+        text-align: center;
     }
 }
