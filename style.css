@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101820;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 35px 20px;
+    background: #0b1118;
+    border-bottom: 1px solid #26323d;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+header h1 font {
+    color: #00d9ff !important;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+header hr {
+    border: none;
+    height: 2px;
+    background: #00d9ff;
+    margin: 20px auto;
+}
+
+header a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #00d9ff !important;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+section[align="center"] {
+    padding: 50px 20px;
+}
+
+section[align="center"] h2 {
+    font-size: 30px;
+}
+
+section[align="center"] p {
+    color: #b8c0c8;
+}
+
+button {
+    background: #00d9ff;
+    color: #101820;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+
+/* =========================
+   ALL SECTIONS
+========================= */
+
+section {
+    margin: 25px auto;
+}
+
+section table {
+    background: #151f28;
+    border: 1px solid #26323d;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+section h2 {
+    color: #ffffff;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+section h2 font {
+    color: #00d9ff !important;
+}
+
+section h3 {
+    color: #00d9ff;
+}
+
+section hr {
+    border: none;
+    height: 1px;
+    background: #293642;
+    margin: 15px 0 20px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+section p {
+    color: #b8c0c8;
+    margin: 8px 0;
+}
+
+section b {
+    color: #ffffff;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills table {
+    border-spacing: 0;
+}
+
+#skills td {
+    padding: 14px;
+    border-bottom: 1px solid #26323d;
+    color: #d6dce1;
+}
+
+#skills tr:last-child td {
+    border-bottom: none;
+}
+
+#skills tr:hover {
+    background: #1b2833;
+}
+
+#skills td:last-child {
+    color: #00d9ff;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+li {
+    background: #1b2833;
+    border-left: 3px solid #00d9ff;
+    margin: 10px 0;
+    padding: 12px 18px;
+    color: #d6dce1;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #223442;
+    padding-left: 25px;
+    color: #00d9ff;
+}
+
+
+/* =========================
+   FUTURE VISION
+========================= */
+
+section[align="center"] h3 {
+    margin-top: 20px;
+    color: #00d9ff;
+    font-style: italic;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact a {
+    color: #00d9ff !important;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 60px;
+    padding: 35px 20px;
+    background: #0b1118;
+    border-top: 1px solid #26323d;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+footer h2 font {
+    color: #00d9ff !important;
+}
+
+footer p {
+    color: #707b85;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+section table {
+    transition: 0.3s;
+}
+
+section table:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.08);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    section table {
+        width: 92% !important;
+    }
+
+    section[align="center"] {
+        padding: 35px 10px;
+    }
+
+    section[align="center"] h2 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #skills table {
+        font-size: 13px;
+    }
+
+    #skills td:last-child {
+        font-size: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
